@@ -147,9 +147,24 @@ const createPattern12 = (n) => {
 const createPattern13 = (n) => {
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < 2 * n - 1; j++) {
-      if (i === n - 1) {
+      if (i === 0) {
         process.stdout.write("*");
-      } else if (j === n - (i + 1) || j === i + (n - 1)) {
+      } else if (j === i || j === 2 * n - i - 2) {
+        process.stdout.write("*");
+      } else {
+        process.stdout.write(" ");
+      }
+    }
+    process.stdout.write("\n");
+  }
+};
+
+const createPattern14 = (n) => {
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < 2 * n - 1; j++) {
+      if (i === 0) {
+        process.stdout.write("*");
+      } else if (j === i || j === 2 * n - i - 2) {
         process.stdout.write("*");
       } else {
         process.stdout.write(" ");
@@ -172,3 +187,4 @@ createPattern10(8);
 createPattern11(15);
 createPattern12(5);
 createPattern13(20);
+createPattern14(6);
