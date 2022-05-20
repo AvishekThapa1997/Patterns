@@ -1,4 +1,4 @@
-const createPattern6 = (n) => {
+const createPattern10 = (n) => {
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
       if (j < n - i - 1) {
@@ -10,4 +10,4 @@ const createPattern6 = (n) => {
     process.stdout.write("\n");
   }
 };
-createPattern6(8);
+createPattern10(8);
