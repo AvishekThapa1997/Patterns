@@ -52,13 +52,13 @@ n = 5 </br>
 
 # Pattern - 6
 
-n = 5 </br>
+n = 5
 
-&nbsp;&nbsp;&nbsp;&nbsp;\*</br>
-&nbsp;&nbsp;&nbsp;\*\*</br>
-&nbsp;&nbsp;\*\*\*</br>
-&nbsp;\*\*\*\*</br>
-\*\*\*\*\*
+         *
+        **
+       ***
+      ****
+     *****
 
 # Pattern - 7
 
