@@ -147,9 +147,9 @@ const createPattern12 = (n) => {
 const createPattern13 = (n) => {
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < 2 * n - 1; j++) {
-      if (i === 0) {
+      if (i === n - 1) {
         process.stdout.write("*");
-      } else if (j === i || j === 2 * n - i - 2) {
+      } else if (j === n - (i + 1) || j === i + (n - 1)) {
         process.stdout.write("*");
       } else {
         process.stdout.write(" ");
