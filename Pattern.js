@@ -9,8 +9,12 @@ const createPattern1 = (n) => {
 
 const createPattern2 = (n) => {
   for (let i = 0; i < n; i++) {
-    for (let j = 0; j <= i; j++) {
-      process.stdout.write("*");
+    for (let j = 0; j < n; j++) {
+      if (j < n - i - 1) {
+        process.stdout.write(" ");
+        continue;
+      }
+      process.stdout.write("* ");
     }
     process.stdout.write("\n");
   }
@@ -100,6 +104,19 @@ const createPattern9 = (n) => {
   }
 };
 
+const createPattern10 = (n) => {
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      if (j < n - i - 1) {
+        process.stdout.write(" ");
+        continue;
+      }
+      process.stdout.write("* ");
+    }
+    process.stdout.write("\n");
+  }
+};
+
 createPattern1(10);
 createPattern2(10);
 createPattern3(8);
@@ -109,3 +126,4 @@ createPattern6(4);
 createPattern7(10);
 createPattern8(11);
 createPattern9(6);
+createPattern10(8);
