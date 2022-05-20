@@ -64,11 +64,11 @@ n = 5
 
 n = 5</br>
 
-\*\*\*\*\*</br>
-&nbsp;\*\*\*\*</br>
-&nbsp;&nbsp;\*\*\*</br>
-&nbsp;&nbsp;&nbsp;\*\*</br>
-&nbsp;&nbsp;&nbsp;&nbsp;\*</br>
+        *****
+         ****
+          ***
+           **
+            *
 
 # Pattern - 8
 
