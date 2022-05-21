@@ -174,6 +174,28 @@ const createPattern14 = (n) => {
   }
 };
 
+const createPattern15 = (n) => {
+  for (let i = 0; i < 2 * n - 1; i++) {
+    for (let j = 0; j < 2 * n - 1; j++) {
+      if (i < n) {
+        const base = n - 1;
+        if (j === base - i || j === i + base) {
+          process.stdout.write("*");
+          continue;
+        }
+      } else {
+        const base = i - n + 1;
+        if (j === base || j === 2 * n - 2 - base) {
+          process.stdout.write("*");
+          continue;
+        }
+      }
+      process.stdout.write(" ");
+    }
+    process.stdout.write("\n");
+  }
+};
+
 createPattern1(10);
 createPattern2(10);
 createPattern3(8);
@@ -188,3 +210,4 @@ createPattern11(15);
 createPattern12(5);
 createPattern13(20);
 createPattern14(6);
+createPattern15(11);
