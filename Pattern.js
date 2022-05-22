@@ -287,6 +287,19 @@ const createPattern20 = (n) => {
   }
 };
 
+const createPattern21 = (n) => {
+  let value = 1;
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j <= i; j++) {
+      if (j > 0) {
+        process.stdout.write(" ");
+      }
+      process.stdout.write(`${value++}`);
+    }
+    process.stdout.write("\n");
+  }
+};
+
 createPattern1(10);
 createPattern2(10);
 createPattern3(8);
@@ -307,3 +320,4 @@ createPattern17(5);
 createPattern18(5);
 createPattern19(5);
 createPattern20(5);
+createPattern21(5);
