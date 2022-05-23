@@ -346,3 +346,13 @@ n = 5
     C D E
     B C D E
     A B C D E
+
+# Pattern - 32
+
+n = 5
+
+    a
+    B c
+    D e F
+    g H i J
+    k L m N o
