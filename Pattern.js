@@ -315,25 +315,20 @@ const createPattern22 = (n) => {
   }
 };
 
-createPattern1(10);
-createPattern2(10);
-createPattern3(8);
-createPattern4(10);
-createPattern5(5);
-createPattern6(4);
-createPattern7(10);
-createPattern8(11);
-createPattern9(6);
-createPattern10(8);
-createPattern11(15);
-createPattern12(5);
-createPattern13(20);
-createPattern14(6);
-createPattern15(11);
-createPattern16(5);
-createPattern17(5);
-createPattern18(5);
-createPattern19(5);
-createPattern20(5);
-createPattern21(5);
-createPattern22(5);
+const createPattern23 = (n) => {
+  for (let i = 0; i < n; i++) {
+    const value = 2 * (n - 1) + (n - 1 + i);
+    for (let j = 0; j <= 4 * (n - 1); j++) {
+      if (j === n - 1 - i || j === value) {
+        process.stdout.write("*");
+      } else if (i > 0 && j === n + i - 1) {
+        process.stdout.write("*");
+      } else if (i > 0 && j === 4 * (n - 1) - (i + n - 1)) {
+        process.stdout.write("*");
+      } else {
+        process.stdout.write(" ");
+      }
+    }
+    process.stdout.write("\n");
+  }
+};
